@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+
+body{
+	background-image: url("Pictures/bg.jpg");
+	background-color: floralwhite;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+a {
+	font-family: Great Vibes;
+	font-size: 35px;
+	text-decoration: none;
+	color: black;
+	border: 2px solid black;
+	padding-left: 50px;
+	padding-right: 50px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	font-weight: bold;
+}
+
+#quote {
+	font-family: Great Vibes;
+	font-size: 40px;
+	padding-bottom: 20px;
+	font-weight: bold;
+}
+
+a:hover {
+	color: rgb(116, 1, 113);
+	background-color: rgba(191, 136, 187, 0.4);
+	text-decoration: none;
+	border: 2px solid rgb(116, 1, 113);
+
+}	
+
+.display-1 {
+	font-family:  Great Vibes;
+	font-size: 110px;
+	margin-top: -15px;
+	font-weight: bold;
+}

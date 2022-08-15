@@ -1,0 +1,388 @@
+/*Navigation*/
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.logo1 {
+	display: inline-block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 4%;
+	padding-top: 15px;
+	padding-right: 10px;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+nav {
+  background-color: rgba(191, 136, 187, 0.4);
+  border: 2px solid rgb(116, 1, 113);
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+ul li a {
+	color: black;
+	
+}
+
+.logo a:hover {
+	text-decoration: none;
+	color: black;
+}
+
+.menu li {
+  font-size: 16px;
+  white-space: nowrap;
+  padding-top: 15px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.logo a, .toggle a {
+  font-size: 30px;
+  font-family: Great Vibes;
+  color: black;
+}
+
+.button.secondary {
+  border-bottom: 1px black solid;
+  color: black;
+}
+
+/* Mobile menu */
+.logo1 {
+	display: none;	
+}
+
+.menu {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.toggle {
+  order: 1;
+}
+
+.item.button {
+  order: 2;
+}
+
+.item {
+    width: 100%;
+    text-align: center;
+    order: 3;
+    display: none;
+}
+
+.item.active {
+  display: block;
+}
+
+/* Navbar Toggle */
+.toggle {
+  cursor:pointer;
+}
+
+.bars {
+  background: #999;
+  display: inline-block;
+  height: 2px;
+  position: relative;
+  transition: background .2s ease-out;
+  width: 18px;
+}
+
+.bars:before, .bars:after {
+  background: #999;
+  content: '';
+  display: block;
+  height: 100%;
+  position: absolute;
+  transition: all .2s ease-out;
+  width: 100%;
+}
+
+.bars:before {
+  top: 5px;
+}
+
+.bars:after {
+  top: -5px;
+}
+
+/* Tablet menu */
+@media all and (min-width: 520px) {
+.logo1{
+	display: none;	
+}
+.menu {
+	justify-content: center;
+}
+
+.logo {
+    flex: 1;
+}
+
+.item.button {
+    width: auto;
+    order: 1;
+    display: block;
+}
+
+.toggle {
+    order: 2;
+}
+
+.button.secondary {
+    border: 0;
+}
+
+.item a:hover {
+	border: 1px solid purple;
+    color: purple;
+	text-decoration: none;
+}
+
+.item a, .button a {
+    padding: 7.5px 15px;
+    background: rgba(235, 226, 237, 0.4);
+    border: 1px rgb(205, 183, 246) solid;
+    border-radius:50em;
+}
+
+#home a {
+	background-color: rgba(191, 136, 187, 0.4);
+	border: 1px solid rgb(116, 1, 113);
+	color: rgb(116, 1, 113);
+}
+
+.button.secondary a {
+    background: rgba(235, 226, 237, 0.4);  
+	border: 1px rgb(205, 183, 246) solid;	  
+}
+
+.item a, .button.secondary a, .button a:hover {
+    text-decoration: none;
+    transition:all .25s;
+}
+
+.button:not(.secondary) a:hover {
+    border: 1px solid purple;
+    color: purple;
+}
+
+.button.secondary a:hover {
+	border: 1px solid purple;
+    color: purple;
+} 
+}
+
+/* Desktop menu */
+@media all and (min-width: 950px) {
+.logo1{
+	display: inline-block;	
+}
+
+.item {
+    display: block;
+    width: auto;
+}
+.toggle {
+    display: none;
+}
+.logo {
+    order: 0;
+}
+.item {
+    order: 1;
+}
+.button {
+    order: 2;
+}
+ menu li {
+    padding: 15px 10px;
+}
+.menu li.button {
+    padding-right: 0;
+}
+} 
+
+#space{
+	margin-top: -35px;
+}
+
+#backgroundTitle{
+	background: transparent;
+	background-image: url(Pictures/bg.jpg);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+#title{
+/*	border: 1px solid black;*/
+	font-size: 110px;
+	font-family: Great Vibes;
+	text-align: center;
+	font-weight: bold;
+}
+
+#quote{
+	text-align: center;
+	font-size: 25px;
+	font-family: Great Vibes;
+	font-weight: bold;
+}
+
+#paragraph1{
+	font-size: 16px;
+	font-family: Arial, sans-serif;
+	color: black;
+	text-align: justify;
+	text-transform: uppercase;
+}
+
+#paragraph2{
+	font-size: 16px;
+	font-family: Arial, sans-serif;
+	color: black;
+	text-align: justify;
+	text-transform: uppercase;
+}
+
+/*****************************************************************************************************************************************/
+
+.slider{
+  width: 800px;
+  height: 500px;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.slides{
+  width: 500%;
+  height: 500px;
+  display: flex;
+}
+
+.slides input{
+  display: none;
+}
+
+.slide{
+  width: 20%;
+  transition: 2s;
+}
+
+.slide img{
+  width: 800px;
+  height: 500px;
+}
+
+/*css for manual slide navigation*/
+
+.navigation-manual{
+  position: absolute;
+  width: 800px;
+  margin-top: -40px;
+  display: flex;
+  justify-content: center;
+}
+
+.manual-btn{
+  border: 2px solid rgb(116, 1, 113));
+  padding: 5px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 1s;
+}
+
+.manual-btn:not(:last-child){
+  margin-right: 40px;
+}
+
+.manual-btn:hover{
+  background: rgb(116, 1, 113);
+}
+
+#radio1:checked ~ .first{
+  margin-left: 0;
+}
+
+#radio2:checked ~ .first{
+  margin-left: -20%;
+}
+
+#radio3:checked ~ .first{
+  margin-left: -40%;
+}
+
+#radio4:checked ~ .first{
+  margin-left: -60%;
+}
+
+#radio5:checked ~ .first{
+  margin-left: -80%;
+}
+
+/*css for automatic navigation*/
+
+.navigation-auto{
+  position: absolute;
+  display: flex;
+  width: 800px;
+  justify-content: center;
+  margin-top: 460px;
+}
+
+.navigation-auto div{
+  border: 2px solid rgb(116, 1, 113);
+  padding: 5px;
+  border-radius: 10px;
+  transition: 1s;
+}
+
+.navigation-auto div:not(:last-child){
+  margin-right: 40px;
+}
+
+#radio1:checked ~ .navigation-auto .auto-btn1{
+  background: rgb(116, 1, 113);
+}
+
+#radio2:checked ~ .navigation-auto .auto-btn2{
+  background: rgb(116, 1, 113);
+}
+
+#radio3:checked ~ .navigation-auto .auto-btn3{
+  background: rgb(116, 1, 113);
+}
+
+#radio4:checked ~ .navigation-auto .auto-btn4{
+  background: rgb(116, 1, 113);
+}
+
+#radio5:checked ~ .navigation-auto .auto-btn5{
+  background: rgb(116, 1, 113);
+}
+

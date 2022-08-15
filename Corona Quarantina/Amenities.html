@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Corona Quarantina</title>
+    <link rel="stylesheet" href="Amenities.css">
+	<link rel="stylesheet"; type="text/css"; href="bootstrap.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"; integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8="; crossorigin="anonymous"></script>
+	<script>
+    $(function() {
+    $(".toggle").on("click", function() {
+        if ($(".item").hasClass("active")) {
+            $(".item").removeClass("active");
+        } else {
+            $(".item").addClass("active");
+        }
+    });
+});
+	</script>
+</head>
+<body>
+    <nav>
+        <ul class="menu">
+			<img src="Pictures/logo.png" class="logo1">
+            <li class="logo"><a href="Home.html">Corona Quarantina</a></li>
+            <li class="item"><a href="R&A.html">Rooms & Accomodation</a></li>
+            <li class="item" id="amenities"><a href="Amenities.html">Amenities</a></li>
+            <li class="item"><a href="V&R.html">Venue & Reception</a></li>
+            <li class="item button"><a href="Home.html">Home</a></li>
+            <li class="item button secondary"><a href="AU.html">About Us</a></li>
+            <li class="toggle"><span class="bars"></span></li>
+        </ul>
+    </nav>
+    <main>
+	<div class="jumbotron jumbotron-fluid" id="backgroundTitle">
+	<h1 id="title">Corona Quarantina</h1>
+	<p id="quote">where your security and privacy matters.</p>
+	</div>
+	<div class="row">
+		<div class="col-lg-1"></div>
+		<div class="col-lg-4"><img src="Pictures/Spa.jpg" alt="Spa" class="images"></div>
+		<div class="col-lg-6">
+			<br><br><br>
+			<p class="title">The Spa</p>
+			<p class="description">
+				At our Spa, ceremonial rituals, revitalizing treatments and deeply healing local ingredients work
+				as the perfect treatments for today. It accomodates 25 persons. It is open from 10:00am to 8:00pm.
+			</p>
+			<br><br><br>
+		</div>
+		<div class="col-lg-1"></div>
+	</div>
+	<br><br><br>
+	<div class="row">
+		<div class="col-lg-1"></div>
+		<div class="col-lg-6">
+			<br><br><br>
+			<p class="title">Fitness Center</p>
+			<p class="description">
+				Stay on track with your fitness goals even when you're far from home. Our service is open 24/7.
+				You can workout whenever you like. It accomodates 50 persons.
+			</p>
+			<br><br><br>
+		</div>
+		<div class="col-lg-4"><img src="Pictures/fitnessCenter.jpg" alt="Spa" class="images"></div>
+		<div class="col-lg-1"></div>
+	</div>
+	<br><br><br>
+	<div class="row">
+		<div class="col-lg-1"></div>
+		<div class="col-lg-4"><img src="Pictures/garden.jpg" alt="Spa" class="images"></div>
+		<div class="col-lg-6">
+			<br><br><br>
+			<p class="title">The Garden</p>
+			<p class="description">
+				Beyond the Hotel, enter the dramatic beauty of our pond garden, its preserved for over 1200 years.
+				It is open for everyone, 24/7.
+			</p>
+			<br><br><br>
+		</div>
+		<div class="col-lg-1"></div>
+	</div>
+	<br><br><br>
+	<div class="row">
+		<div class="col-lg-1"></div>
+		<div class="col-lg-6">
+			<br><br><br>
+			<p class="title">Yoga</p>
+			<p class="description">
+				Enter out pond garden sanctuary for health-conscious customers. Experience all-encompassing wellness
+				inspired by traditional practices. It is open for everyone from 8:00am to 4:00pm.
+			</p>
+			<br><br><br>
+		</div>
+		<div class="col-lg-4"><img src="Pictures/fitnessCenter.jpg" alt="Spa" class="images"></div>
+		<div class="col-lg-1"></div>
+	</div>
+	<br><br><br>
+	<div class="row">
+		<div class="col-lg-1"></div>
+		<div class="col-lg-4"><img src="Pictures/indoorPool.jpg" alt="Spa" class="images"></div>
+		<div class="col-lg-6">
+			<br><br><br>
+			<p class="title">The Indoor Pool</p>
+			<p class="description">
+				Go for swim or sit back and relax on an underwater lounge chair in 20-meter indoor pool. It is allowed for
+				the children from 7:00am to 3:00pm and 24/7 for the adults.
+			</p>
+			<br><br><br>
+		</div>
+		<div class="col-lg-1"></div>
+	</div>
+	<br><br><br>
+    </main>
+</body>
+</html> 

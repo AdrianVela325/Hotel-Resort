@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Corona Quarantina</title>
+    <link rel="stylesheet" href="AU.css">
+	<link rel="stylesheet"; type="text/css"; href="bootstrap.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"; integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8="; crossorigin="anonymous"></script>
+	<script>
+    $(function() {
+    $(".toggle").on("click", function() {
+        if ($(".item").hasClass("active")) {
+            $(".item").removeClass("active");
+        } else {
+            $(".item").addClass("active");
+        }
+    });
+});
+	</script>
+</head>
+<body>
+    <nav>
+        <ul class="menu">
+			<img src="Pictures/logo.png" class="logo1">
+            <li class="logo"><a href="Home.html">Corona Quarantina</a></li>
+            <li class="item"><a href="R&A.html">Rooms & Accomodation</a></li>
+            <li class="item"><a href="Amenities.html">Amenities</a></li>
+            <li class="item"><a href="V&R.html">Venue & Reception</a></li>
+            <li class="item button"><a href="Home.html">Home</a></li>
+            <li class="item button secondary" id="au"><a href="AU.html">About Us</a></li>
+            <li class="toggle"><span class="bars"></span></li>
+        </ul>
+    </nav>
+	<div class="container-fluid">
+	<br>
+		<p id="name">Corona Quarantina</p>
+		<p id="quote">where your security and privacy matters.</p>
+		<br>
+		<div class="row">
+			<div class="col-1"></div>
+			<div class="col-10" id="description"><strong id="title">Corona Quarantina</strong> is a hotel where your privacy and security matters while 
+			you are enjoying. You can choose any type of room, venues and receptions of what you want. You can enjoy here even when you are alone,
+			with your loved ones, with your friends, with your family or to whomever you like to stay with. We value your privacy and security the
+			most for your satisfaction. There are some amenities here that is attractive, what some people called "instagrammable". We promise you
+			that this hotel will be the hotel that you will like, in terms of amenities, rooms, services and many more.</div>
+			<div class="col-1"></div>
+		</div>
+		<br>
+		<p class="loc"><strong>Location:</strong></p>
+		<p class="loc" id="loc">Lipa City, Batangas, Philippines</p>
+		<br>
+		<div class="row">
+			<div class="col-1"></div>
+			<div class="col-10" id="map"><strong>Map View:</strong><br><img src="Pictures/Lipa Map.JPG" alt="Lipa City, Batangas, Philippines" id="maps"></div>
+			<div class="col-1"></div>
+		</div>
+	</div>
+	<br>
+	<div class="container">
+		<div class="row">
+			<div class="col-3">
+				<p id="contact"><strong>Contact Us:</strong></p>
+				<p id="contacts">Mr. Abdul Bukol<br>09123456789<br>Owner of Corona Quarantina</p>
+			</div>
+			<div class="col-6"></div>
+			<div class="col-3">
+				<p class="about"><strong>Web Developer:</strong></p>
+				<p class="abouts">Mr. Adrian Vela<br></p>
+				<p class="about"><strong>Social Media Accounts:</strong></p>
+				<p class="abouts">
+					<div class="row">
+						<div class="col-2"><img src="Pictures/fb logo.png" alt="Facebook" id="fb"></div>
+						<div class="col-10"><a href="https://www.facebook.com/profile.php?id=100005939628422" id="fbprofile">https://www.facebook.com/profile.php?id=100005939628422</a></div>
+					<div>
+					<div class="row">
+						<div class="col-3"><img src="Pictures/gmail logo.png" alt="Facebook" id="g"></div>
+						<div class="col-9" id="gl">adrianvela325@gmail.com</div>
+					<div>
+				</p>
+				<br><br>
+			</div>
+		</div>
+	</div>
+</body>
+</html> 

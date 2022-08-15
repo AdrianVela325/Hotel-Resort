@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Corona Quarantina</title>
+    <link rel="stylesheet" href="V&R.css">
+	<link rel="stylesheet"; type="text/css"; href="bootstrap.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"; integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8="; crossorigin="anonymous"></script>
+	<script>
+    $(function() {
+    $(".toggle").on("click", function() {
+        if ($(".item").hasClass("active")) {
+            $(".item").removeClass("active");
+        } else {
+            $(".item").addClass("active");
+        }
+    });
+});
+	</script>
+</head>
+<body>
+    <nav>
+        <ul class="menu">
+			<img src="Pictures/logo.png" class="logo1">
+            <li class="logo"><a href="Home.html">Corona Quarantina</a></li>
+            <li class="item"><a href="R&A.html">Rooms & Accomodation</a></li>
+            <li class="item"><a href="Amenities.html">Amenities</a></li>
+            <li class="item" id="vr"><a href="V&R.html">Venue & Reception</a></li>
+            <li class="item button"><a href="Home.html">Home</a></li>
+            <li class="item button secondary"><a href="AU.html">About Us</a></li>
+            <li class="toggle"><span class="bars"></span></li>
+        </ul>
+    </nav>
+		<div class="jumbotron jumbotron-fluid" id="backgroundTitle">
+	<h1 id="title">Corona Quarantina</h1>
+	<p id="quote">where your security and privacy matters.</p>
+	</div>
+    <main>
+	<div class="row">
+		<div class="col-lg-1"></div>
+		<div class="col-lg-10"><img src="Pictures/chapel.jpg" alt="Chapel" class="images"></div>
+		<div class="col-lg-1"></div>
+	</div>
+	<div class="row">
+		<div class="col-lg-1"></div>
+		<div class="col-lg-10">
+			<p class="title">CQ's Chapel</p>
+			<p class="description">
+				Recite your vows in the presence of family and friends in Corona Quarantina's chapel.
+		</div>
+		<div class="col-lg-1"></div>
+	</div>
+	<br><br><br>
+	<div class="row">
+		<div class="col-lg-1"></div>
+		<div class="col-lg-10"><img src="Pictures/venuedecor.jpg" alt="Decorative Venue" class="images"></div>
+		<div class="col-lg-1"></div>
+	</div>
+	<div class="row">
+		<div class="col-lg-1"></div>
+		<div class="col-lg-10">
+			<p class="title">CQ's Luxurious Decorative Venue</p>
+			<p class="description">
+				Your personal ideas with the help of our fashion designer will be the followed ideas
+				for the memorables events.
+			<br><br>
+		</div>
+		<div class="col-lg-1"></div>
+	</div>
+	<br><br><br>
+	<div class="row">
+		<div class="col-lg-1"></div>
+		<div class="col-lg-10"><img src="Pictures/ballroomfoyer.jpg" alt="Ballroom Foyer" class="images"></div>
+		<div class="col-lg-1"></div>
+	</div>
+	<div class="row">
+		<div class="col-lg-1"></div>
+		<div class="col-lg-10">
+			<p class="title">Ballroom Foyer</p>
+			<p class="description">
+				Our ballroom offers extra flexibility with the addition of a richly detailed pre-function space.
+			<br><br>
+		</div>
+		<div class="col-lg-1"></div>
+	</div>
+    </main>
+</body>
+</html> 

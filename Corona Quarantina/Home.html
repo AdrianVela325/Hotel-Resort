@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Corona Quarantina</title>
+    <link rel="stylesheet" href="Home.css">
+	<link rel="stylesheet"; type="text/css"; href="bootstrap.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"; integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8="; crossorigin="anonymous"></script>
+	<script>
+	/*Toggle Bar*/
+    $(function() {
+    $(".toggle").on("click", function() {
+        if ($(".item").hasClass("active")) {
+            $(".item").removeClass("active");
+        } else {
+            $(".item").addClass("active");
+        }
+    });
+});
+    </script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" charset="utf-8"></script>
+</head>
+<body>
+    <nav>
+        <ul class="menu">
+			<img src="Pictures/logo.png" class="logo1">
+            <li class="logo"><a href="Home.html">Corona Quarantina</a></li>
+            <li class="item"><a href="R&A.html">Rooms & Accomodation</a></li>
+            <li class="item"><a href="Amenities.html">Amenities</a></li>
+            <li class="item"><a href="V&R.html">Venue & Reception</a></li>
+            <li class="item button" id="home"><a href="Home.html">Home</a></li>
+            <li class="item button secondary"><a href="AU.html">About Us</a></li>
+            <li class="toggle"><span class="bars"></span></li>
+        </ul>
+    </nav>
+	<div class="jumbotron jumbotron-fluid" id="backgroundTitle">
+	<h1 id="title">Corona Quarantina</h1>
+	<p id="quote">where your security and privacy matters.</p>
+	</div>
+	<br><br>
+	<main id="space">
+	<div class="row">
+		<div class="col-1"></div>
+		<div class="col-10" id="paragraph1">
+			&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspCome and check-in on our hotel. You will experience traveling some parts of the world in just a day. You can choose of what room you want.
+			And also there are luxury amenities we have that can be useful for you. We have also venues and reception wherein you can celebrate an
+			occasion whether it is open celebration or private celebration. You will see below the highlights and external parts of the hotel. 
+		</div>
+		<div class="col-1"></div>
+	</div>
+	<br>
+	<div class="slider">
+		<div class="slides">
+			<!--radio buttons start-->
+			<input type="radio" name="radio-btn" id="radio1">
+			<input type="radio" name="radio-btn" id="radio2">
+			<input type="radio" name="radio-btn" id="radio3">
+			<input type="radio" name="radio-btn" id="radio4">
+			<input type="radio" name="radio-btn" id="radio5">
+			<!--radio buttons end-->
+			<!--slide images start-->
+			<div class="slide first">
+			  <img src="Pictures/01.jpg" alt="1">
+			</div>
+			<div class="slide">
+			  <img src="Pictures/02.jpg" alt="2">
+			</div>
+			<div class="slide">
+			  <img src="Pictures/05.jpg" alt="3">
+			</div>
+			<div class="slide">
+			  <img src="Pictures/03.jpg" alt="4">
+			</div>
+			<div class="slide">
+			  <img src="Pictures/04.jpg" alt="5">
+			</div>
+			<!--slide images end-->
+			<!--automatic navigation start-->
+			<div class="navigation-auto">
+			  <div class="auto-btn1"></div>
+			  <div class="auto-btn2"></div>
+			  <div class="auto-btn3"></div>
+			  <div class="auto-btn4"></div>
+			  <div class="auto-btn5"></div>
+			</div>
+			<!--automatic navigation end-->
+		</div>
+		  <!--manual navigation start-->
+		<div class="navigation-manual">
+			<label for="radio1" class="manual-btn"></label>
+			<label for="radio2" class="manual-btn"></label>
+			<label for="radio3" class="manual-btn"></label>
+			<label for="radio4" class="manual-btn"></label>
+			<label for="radio5" class="manual-btn"></label>
+		</div>
+		  <!--manual navigation end-->
+	</div>
+		<!--image slider end-->
+		
+	<script type="text/javascript">
+		var counter = 1;
+		setInterval(function(){
+			document.getElementById('radio' + counter).checked = true;
+			counter++;
+			if(counter > 5){
+			counter = 1;
+			}
+		}, 5000);
+	</script>
+	<br>
+	<div class="row">
+		<div class="col-1"></div>
+		<div class="col-10" id="paragraph2">
+			&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspExpect the happiness and enjoyment that the hotel will bring you. Except that this hotel is luxurious, the quality
+			of the amenities and services in this hotel will help you to relieve you from a stress and help you to have a good
+			mood. We assure you and we are confident that you will enjoy inisde the hotel and will make you to came back once
+			you experience to check-in on our hotel.
+		</div>
+		<div class="col-1"></div>
+	</div>
+	<br><br>
+	</main>
+</body>
+</html> 
